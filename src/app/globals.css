@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0b0e11;
+  --surface: #12161b;
+  --surface-2: #171c22;
+  --border: #232a32;
+  --text: #e7ebee;
+  --text-dim: #8b96a1;
+  --teal: #2a8f96;
+  --teal-soft: #1a3a3d;
+  --gold: #c9a24a;
+  --red: #c85c4a;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-text-dim: var(--text-dim);
+  --color-teal: var(--teal);
+  --color-teal-soft: var(--teal-soft);
+  --color-gold: var(--gold);
+  --color-red: var(--red);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-mono-plex);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+::selection {
+  background: var(--teal-soft);
+  color: var(--text);
+}

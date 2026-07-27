@@ -50,3 +50,15 @@ export type CrawlProgress = {
   errors_count: number;
   updated_at: string;
 };
+
+export type CrawlProgressCity = {
+  id: number;
+  status: string;
+  current_task: string | null;
+  tasks_done: number;
+  companies_found: number;
+  companies_fetched: number;
+  keyword_merges: number;
+  errors_count: number;
+  updated_at: string;
+};
